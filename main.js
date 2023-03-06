@@ -5,9 +5,6 @@ const closeButton = document.querySelector('#close')
 const scoreSpan = document.querySelector('.score')
 const scoreEnd = document.querySelector('.scoreEnd')
 const overlay = document.querySelector('.overlay')
-const startSound = new Audio('frog_quak-81741 copy.mp3')
-const endSound = new Audio('game finish.wav')
-
 
 let score = 0
 let active = 0
