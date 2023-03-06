@@ -23,7 +23,7 @@ const clickCircle = (i) => {
     return endGame()
   }
   rounds -= 1
-  score += 10
+  score += 20
   scoreSpan.textContent = score
 }
 
@@ -34,7 +34,7 @@ const enableCircles = () => {
 }
 
 const startGame = () => {
-  const startSound = new Audio('frog_quak-81741 copy.mp3');
+  const startSound = new Audio('sounds/frog_quak-81741 copy.mp3');
   startSound.play()
   if (rounds >= 3) {
   return endGame()
@@ -67,9 +67,9 @@ const startGame = () => {
 }
 
 const endGame = () => {
-  const startSound = new Audio('frog_quak-81741 copy.mp3');
+  const startSound = new Audio('sounds/frog_quak-81741 copy.mp3');
   startSound.pause()
-  const endSound = new Audio('game finish.wav');
+  const endSound = new Audio('sounds/game finish.wav');
   endSound.play()
   scoreEnd.textContent = score
   endButton.classList.remove('hidden')

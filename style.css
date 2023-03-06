@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(pond.avif);
+    background-image: url(/Images_and_sounds/pond.avif);
     background-size: cover;
     background-color: aqua;
     font-family: 'Indie Flower', cursive;
@@ -42,7 +42,7 @@ body {
 }
 
 .circle.active {
-    background-image: url(frog.jpg);
+    background-image: url(/Images_and_sounds/frog.jpg);
     background-size: cover;
     background-position: center;
 }
