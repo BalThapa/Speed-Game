@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(pond.avif);
+    background-size: cover;
+    background-color: aqua;
+    font-family: 'Indie Flower', cursive;
+    background-attachment: fixed;
+    font-size: xx-large;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 1200px;
+    color: #000000;
+    margin-left: 5rem;
+}
+
+.circles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.circle {
+    height: 10rem;
+    width: 10rem;
+    background-color: none;
+    border: solid;
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 50%;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.circle.active {
+    background-image: url(frog.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.modal {
+    background-color: rgb(251, 208, 145);
+    border: none;
+    border-radius: 2rem;
+    padding-top: 2rem;
+    width: 40%;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.modal button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    margin: 0.5rem;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343232;
+    visibility: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.modal .score {
+    font-size: larger;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    font-family: 'Indie Flower', cursive;
+    font-size: larger;
+    margin: 5rem 1rem;
+    cursor: pointer;
+    background-color: green;
+}
+
+.hidden {
+    display: none;
+}
